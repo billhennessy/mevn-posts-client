@@ -1,7 +1,9 @@
 // import Vue from 'vue'
 // import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
-import Posts from '@/components/Posts'
+import Actions from '@/components/Actions'
+import NewAction from '@/components/NewAction'
+import EditAction from '@/components/EditAction'
 
 // Vue.use(Router)
 
@@ -13,8 +15,18 @@ export const routes =[
       component: HelloWorld
     },
     {
-      path: '/posts',
-      name: 'Posts',
-      component: Posts
+      path: '/actions',
+      name: 'Actions',
+      component: Actions
+    },
+    {
+      path: '/actions/new',
+      name: 'NewAction',
+      component: NewAction
+    },
+    {
+      path: '/actions/:id',
+      name: 'EditAction',
+      component: EditAction
     }
   ]
